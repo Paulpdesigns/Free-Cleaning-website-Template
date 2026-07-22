@@ -109,11 +109,11 @@ document.addEventListener('DOMContentLoaded', function () {
     var rates = {
       standard: { perHundredSqft: 18, label: 'standard home clean' },
       deep:     { perHundredSqft: 27, label: 'deep clean' },
-      moveout:  { perHundredSqft: 31, label: 'move-in / move-out clean' },
+      moveout:  { perHundredSqft: 31, label: 'move in / move out clean' },
       office:   { perHundredSqft: 15, label: 'office / commercial clean' }
     };
     var freqMultiplier = { once: 1, weekly: 0.78, biweekly: 0.85, monthly: 0.92 };
-    var freqLabel = { once: 'one-time visit', weekly: 'weekly plan', biweekly: 'bi-weekly plan', monthly: 'monthly plan' };
+    var freqLabel = { once: 'one time visit', weekly: 'weekly plan', biweekly: 'biweekly plan', monthly: 'monthly plan' };
     var addonCost = { windows: 25, appliances: 20, eco: 10, pet: 15 };
 
     var displayedPrice = 0;
@@ -163,7 +163,7 @@ document.addEventListener('DOMContentLoaded', function () {
       bItems.base.querySelector('span').textContent = '$' + Math.round(base);
       bItems.rooms.querySelector('span').textContent = '$' + Math.round(roomFee);
       bItems.addons.querySelector('span').textContent = '$' + Math.round(addonsTotal);
-      bItems.discount.querySelector('span').textContent = discount > 0 ? ('-$' + Math.round(discount)) : '$0';
+      bItems.discount.querySelector('span').textContent = discount > 0 ? ('$' + Math.round(discount) + ' saved') : '$0';
 
       if (freq !== 'once') {
         badgeEl.textContent = 'Saving ' + Math.round((1 - freqMultiplier[freq]) * 100) + '% on recurring visits';
