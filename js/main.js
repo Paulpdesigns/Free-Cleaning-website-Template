@@ -160,10 +160,10 @@ document.addEventListener('DOMContentLoaded', function () {
       animatePrice(total);
       noteEl.textContent = 'Estimated starting price for a ' + type.label + ', ' + freqLabel[freq] + ', around ' + (sqft || 0) + ' sq ft. Final pricing confirmed after a quick walkthrough.';
 
-      bItems.base.querySelector('span').textContent = '$' + Math.round(base);
-      bItems.rooms.querySelector('span').textContent = '$' + Math.round(roomFee);
-      bItems.addons.querySelector('span').textContent = '$' + Math.round(addonsTotal);
-      bItems.discount.querySelector('span').textContent = discount > 0 ? ('$' + Math.round(discount) + ' saved') : '$0';
+      bItems.base.querySelector('.val').textContent = '$' + Math.round(base);
+      bItems.rooms.querySelector('.val').textContent = '$' + Math.round(roomFee);
+      bItems.addons.querySelector('.val').textContent = '$' + Math.round(addonsTotal);
+      bItems.discount.querySelector('.val').textContent = discount > 0 ? ('$' + Math.round(discount) + ' saved') : '$0';
 
       if (freq !== 'once') {
         badgeEl.textContent = 'Saving ' + Math.round((1 - freqMultiplier[freq]) * 100) + '% on recurring visits';
