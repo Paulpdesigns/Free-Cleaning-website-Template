@@ -1,0 +1,197 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Portfolio — Free Cleaning Website</title>
+<meta name="description" content="Before and after cleaning case studies with an interactive drag-to-compare slider, filterable by residential, commercial, and specialty work.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,500;0,9..144,600;1,9..144,500&family=Inter:wght@400;500;600;700&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<nav class="nav">
+  <div class="container">
+    <a href="index.html" class="brand">
+      <span class="brand-mark">
+        <svg viewBox="0 0 24 24" fill="none" stroke="#F6F5EF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2C9 6 6 9 6 13a6 6 0 0 0 12 0c0-4-3-7-6-11z"/></svg>
+      </span>
+      Free Cleaning Website
+    </a>
+    <div class="nav-links">
+      <a href="index.html#services">Services</a>
+      <a href="index.html#process">Process</a>
+      <a href="index.html#quote">Quote checker</a>
+      <a href="portfolio.html" class="active">Portfolio</a>
+      <a href="index.html#contact">Contact</a>
+    </div>
+    <div class="nav-cta">
+      <a href="index.html#quote" class="btn btn-primary">Get my quote</a>
+      <button class="nav-toggle" aria-label="Open menu"><span></span></button>
+    </div>
+  </div>
+</nav>
+
+<div class="mobile-menu">
+  <a href="index.html#services">Services</a>
+  <a href="index.html#process">Process</a>
+  <a href="index.html#quote">Quote checker</a>
+  <a href="portfolio.html">Portfolio</a>
+  <a href="index.html#contact">Contact</a>
+  <a href="index.html#quote" class="btn btn-primary">Get my quote</a>
+</div>
+
+<header class="page-header">
+  <div class="container">
+    <span class="eyebrow" style="justify-content:center;">Portfolio</span>
+    <h1>Before &amp; after, not just a promise.</h1>
+    <p>Drag any slider to compare. Filter by the type of space closest to yours.</p>
+  </div>
+</header>
+
+<section style="padding-top:0;">
+  <div class="container">
+    <div class="filter-bar reveal">
+      <button class="filter-btn active" data-filter="all">All work</button>
+      <button class="filter-btn" data-filter="residential">Residential</button>
+      <button class="filter-btn" data-filter="commercial">Commercial</button>
+      <button class="filter-btn" data-filter="specialty">Specialty</button>
+    </div>
+
+    <div class="case-list">
+
+      <div class="case-item reveal" data-category="residential">
+        <div class="compare">
+          <img class="before-img" src="https://images.unsplash.com/photo-1686572626806-a3b314c37a30?auto=format&fit=crop&w=1000&q=80" alt="Living room before cleaning, cluttered">
+          <div class="after-wrap">
+            <img src="https://images.unsplash.com/photo-1583847268964-b28dc8f51f92?auto=format&fit=crop&w=1000&q=80" alt="Living room after cleaning, tidy and bright">
+          </div>
+          <div class="divider"></div>
+          <div class="handle"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M8 7l-5 5 5 5M16 7l5 5-5 5"/></svg></div>
+          <span class="tag before-tag">Before</span>
+          <span class="tag after-tag">After</span>
+          <input type="range" min="0" max="100" value="50" aria-label="Drag to compare before and after">
+        </div>
+        <div class="case-copy">
+          <span class="eyebrow">Residential · Living room reset</span>
+          <h3>Sunday deep clean, ready by Monday</h3>
+          <p>A recurring bi-weekly client asked for a deeper reset around a move of furniture. Full dusting, upholstery pass, floor detail, and glass.</p>
+          <div class="case-stats">
+            <div><strong>3.5 hrs</strong><span>On-site time</span></div>
+            <div><strong>2 techs</strong><span>Team size</span></div>
+            <div><strong>Bi-weekly</strong><span>Plan</span></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="case-item flip reveal" data-category="residential">
+        <div class="compare">
+          <img class="before-img" src="https://images.unsplash.com/photo-1516775448597-64ce06b9754e?auto=format&fit=crop&w=1000&q=80" alt="Kitchen before cleaning">
+          <div class="after-wrap">
+            <img src="https://images.unsplash.com/photo-1484154218962-a197022b5858?auto=format&fit=crop&w=1000&q=80" alt="Modern kitchen after cleaning, spotless surfaces">
+          </div>
+          <div class="divider"></div>
+          <div class="handle"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M8 7l-5 5 5 5M16 7l5 5-5 5"/></svg></div>
+          <span class="tag before-tag">Before</span>
+          <span class="tag after-tag">After</span>
+          <input type="range" min="0" max="100" value="50" aria-label="Drag to compare before and after">
+        </div>
+        <div class="case-copy">
+          <span class="eyebrow">Residential · Kitchen detail</span>
+          <h3>Move-out clean ahead of inspection</h3>
+          <p>Cabinets emptied and wiped inside and out, appliance interiors degreased, backsplash and grout detailed for a full deposit return.</p>
+          <div class="case-stats">
+            <div><strong>5 hrs</strong><span>On-site time</span></div>
+            <div><strong>2 techs</strong><span>Team size</span></div>
+            <div><strong>One-time</strong><span>Plan</span></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="case-item reveal" data-category="commercial">
+        <div class="compare">
+          <img class="before-img" src="https://images.unsplash.com/photo-1611324062122-076b1076c6cc?auto=format&fit=crop&w=1000&q=80" alt="Commercial space before cleaning, tables and chairs dusty">
+          <div class="after-wrap">
+            <img src="https://images.unsplash.com/photo-1541123437800-1bb1317badc2?auto=format&fit=crop&w=1000&q=80" alt="Commercial dining space after cleaning, set and spotless">
+          </div>
+          <div class="divider"></div>
+          <div class="handle"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M8 7l-5 5 5 5M16 7l5 5-5 5"/></svg></div>
+          <span class="tag before-tag">Before</span>
+          <span class="tag after-tag">After</span>
+          <input type="range" min="0" max="100" value="50" aria-label="Drag to compare before and after">
+        </div>
+        <div class="case-copy">
+          <span class="eyebrow">Commercial · Office turnover</span>
+          <h3>After-hours reset for a shared workspace</h3>
+          <p>Desks, communal tables, and breakroom surfaces sanitized overnight so the space was ready before the first booking of the day.</p>
+          <div class="case-stats">
+            <div><strong>2 hrs</strong><span>On-site time</span></div>
+            <div><strong>3 techs</strong><span>Team size</span></div>
+            <div><strong>Weekly</strong><span>Plan</span></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="case-item flip reveal" data-category="specialty">
+        <div class="compare">
+          <img class="before-img" src="https://images.unsplash.com/photo-1623797658013-355d1c67c712?auto=format&fit=crop&w=1000&q=80" alt="Dusty surface before cleaning, specialty detail">
+          <div class="after-wrap">
+            <img src="https://images.unsplash.com/photo-1581578731548-c64695cc6952?auto=format&fit=crop&w=1000&q=80" alt="Clean window after specialty glass detail">
+          </div>
+          <div class="divider"></div>
+          <div class="handle"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M8 7l-5 5 5 5M16 7l5 5-5 5"/></svg></div>
+          <span class="tag before-tag">Before</span>
+          <span class="tag after-tag">After</span>
+          <input type="range" min="0" max="100" value="50" aria-label="Drag to compare before and after">
+        </div>
+        <div class="case-copy">
+          <span class="eyebrow">Specialty · Glass &amp; detail</span>
+          <h3>Post-construction dust control</h3>
+          <p>Fine dust cleared from every surface and pane after a renovation, with a final glass pass so the space photographed well for listing.</p>
+          <div class="case-stats">
+            <div><strong>4 hrs</strong><span>On-site time</span></div>
+            <div><strong>2 techs</strong><span>Team size</span></div>
+            <div><strong>One-time</strong><span>Plan</span></div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<section style="padding-top:0;">
+  <div class="container">
+    <div class="cta-section reveal">
+      <div class="container">
+        <div class="cta-grid" style="grid-template-columns:1fr;text-align:center;">
+          <div>
+            <span class="eyebrow" style="color:var(--meadow-light);justify-content:center;">Like what you see</span>
+            <h2>Get a number for your own space.</h2>
+            <p style="margin:16px auto 0;">The quote checker takes under a minute and updates live as you adjust it.</p>
+            <a href="index.html#quote" class="btn btn-primary" style="margin-top:26px;">Open the quote checker</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="container">
+    <span class="brand">Free Cleaning Website — Template</span>
+    <div class="foot-links">
+      <a href="index.html#services">Services</a>
+      <a href="index.html#quote">Quote checker</a>
+      <a href="portfolio.html">Portfolio</a>
+      <a href="index.html#contact">Contact</a>
+    </div>
+  </div>
+  <p class="foot-bottom">Demo template built with static HTML/CSS/JS — free for personal or client use. Photos via Unsplash.</p>
+</footer>
+
+<script src="js/main.js"></script>
+</body>
+</html>
